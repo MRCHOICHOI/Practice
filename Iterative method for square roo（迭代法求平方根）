@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+int a,x1,x2;
+cout<<"输入一个数"<<endl;
+cin>>a;
+x2=a/2;
+do
+{x1=x2;x2=(x1+a/x1)/2.0;}
+while(fabs(x1-x2)>=1e-7);
+cout<<x2<<endl;
+}
+	
+	
+	//利用迭代法求一个数的平方根（无限接近）	先让x1=a/2，然后反复带入公式直到误差小于1e-7；
