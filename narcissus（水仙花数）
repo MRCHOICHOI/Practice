@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+	for(int i=100;i<=999;i++)
+	{
+		int j=i;
+        c=j%10;   //取个位数
+		j=j/10;       
+		b=j%10;       //取十位数
+		a=j/10;       //取百位数
+		int d=a*a*a+b*b*b+c*c*c;
+		if(i==d)
+			cout<<i<<endl;
+	}
+}
