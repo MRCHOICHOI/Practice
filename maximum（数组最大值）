@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a[10]={17,85,67,83,65,49,26,92,38,42};
+	int x=a[0],y=0;
+    for(int i=1;i<10;i++)
+	{
+		if(x<a[i])
+		{	
+			x=a[i];
+            y=i;
+		}
+	}
+ cout<<"最大值为:"<<x<<endl;
+ cout<<"其下标为:"<<y<<endl;
+}
